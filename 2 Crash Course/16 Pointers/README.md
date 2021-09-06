@@ -38,4 +38,4 @@ As you can see in the above example, `pointer` stores the memory address that is
 
 ## References
 
-- [(Geeks for Geeks) Passing pointer vs passing by reference][https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/]
+- [(Geeks for Geeks) Passing pointer vs passing by reference](https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/)
