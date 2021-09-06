@@ -1,4 +1,4 @@
-## 16. Functions
+## 17. Functions
 
 To reduce redunancy of code, make it readable, and minimize errors, we can modularize code block into _functions_. 
 
