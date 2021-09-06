@@ -1,4 +1,4 @@
-# 13. Memory Addresses: `&`
+# 14. Memory Addresses: `&`
 
 If you are ever curios about where exactly a value is stored on memory, you can use the symbol `&` to reveal it. 
 
