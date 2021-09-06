@@ -1,4 +1,4 @@
-# 19. Dynamic Memory Allocation
+# 18. Dynamic Memory Allocation
 
 We've seen previously that variables and variable sizes need to be defined in advance. There are scenarios where it is hard to determine the variable size in advance, fortunately there are two keywords __new__ and __delete__ that allow us to allocate memory dynamically.
 
