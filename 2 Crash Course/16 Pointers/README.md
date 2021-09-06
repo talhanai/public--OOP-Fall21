@@ -1,4 +1,4 @@
-# 15. Pointers
+# 16. Pointers
 
 A powerful element of C++ is it's ability to _store the memory address_ of another variable. This reduces the need to create new variables and copy existing values into new memory locations, which for larger programs helps increase computation speed and use memory resources efficiently.
 
