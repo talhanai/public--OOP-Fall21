@@ -30,3 +30,12 @@ cout << flower << "\n"; // sunflower
 ```
 
 As you can see in the above example, `pointer` stores the memory address that is `&flower`. Using the dereference operator, updating `*pointer`  assigns a new value to the address in `pointer`. Consequently, the value of `flower` is updated since it's value is stored in `pointer`. It may take a moment to absorb the logic of pointers, references, and dereferences. Pointers are so powerful, that across different languages such as _C#_ and _Python_ they don't exist by dedsign because it opens up undue complications.
+
+## Difference between Pointer and Reference
+- A pointer can be re-assigned while a reference cannot (a reference can only be assigned upon initialization). 
+- A pointer can be assigned a NULL value, whereas a reference cannot.
+- A pointer can iterate over an array (e.g. with increment/decrement operators). 
+
+## References
+
+- [(Geeks for Geeks) Passing pointer vs passing by reference][https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/]
