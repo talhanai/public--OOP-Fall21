@@ -36,14 +36,20 @@ int main()
     // These variables can be accessed from 
     // outside the namespace using the scope 
     // operator :: 
-    cout << first::val << '\n';  
+    cout << first::val << '\n';
+    
+    // local variable
+    cout << val << '\n';
+    
+    // global variable
+    cout << ::val << '\n';
   
     return 0; 
 } 
 
 ```
 
-In the above example, we are using the `val` variable as a global variable, in our main code as a local variable, while _also_ using a different `val` variable from our __namespace first__ scope. Declaring a namespace allows us to avoid conflicts with variable names (and functions).
+In the above example, we are using the `val` variable as a global variable, in our main code as a local variable, while _also_ using a different `val` variable from our __namespace first__ scope. Declaring a namespace and using the `::` operator allows us to avoid conflicts with variable names (and functions).
 
 # Reference
 - [Namespace in C++ - geeksforgeeks.org](https://www.geeksforgeeks.org/namespace-in-c/)
