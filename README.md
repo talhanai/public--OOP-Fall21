@@ -29,3 +29,18 @@ __Date__: 7th & 9th Sept 2021
   - Lab 2
 
 
+
+## Week 3
+
+__Date__: 14th & 16th Sept 2021
+
+- **Lecture**: [[Video Playlist](https://www.youtube.com/playlist?list=PLViFAnmN74nCDG4MEWcsOcJxM8SqOcqj6)] [Classes and Objects](4%20Classes%20and%20Objects)
+  - [[Video #1](https://youtu.be/KuEFkl5UPk8) and [Video #2](https://youtu.be/6SUODnSBNRA)] [Defining Classes and Objects](4%20Classes%20and%20Objects/Class)
+  - [[Video](https://youtu.be/A-foS6TpquU)] [Setters and Getters](4%20Classes%20and%20Objects/Setters%20and%20Getters)
+  - [[Video](https://youtu.be/0eZtqoiDxU8)] [Constructors](4%20Classes%20and%20Objects/Constructors) and [Destructors](4%20Classes%20and%20Objects/Destructors)
+  - [[Video](https://youtu.be/mlo9_97qdv4)] [Functions of Objects](4%20Classes%20and%20Objects/Functions%20of%20Objects)
+  - [[Video](https://youtu.be/WGtXVOikyEw)] [Pointers to Objects](4%20Classes%20and%20Objects/Pointers%20to%20Objects)
+- **Assignment**: (available on brightspace.nyu.edu)
+  - Howework 3
+  - Lab 3
+
