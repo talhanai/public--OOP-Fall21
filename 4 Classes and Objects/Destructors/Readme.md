@@ -60,6 +60,10 @@ int main() {
 ```
 In the example above, the destructor is automatically called when the program ends its run (and is deleting the object).
 
+What happens if we don't define a destructor? The compiler automatically generates one, however, if there dynamically allocated memory or pointers declared in the class, these won't get automatically released by the destructor, therefore we have to formally manage that, otherwise this could introduce memory leaks (due to unreleased memory).
+
+
 # References
 - [Desctructors - ibm.com](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.4.0/com.ibm.zos.v2r4.cbclx01/cplr380.htm)
 - [Dynamic Memory Allocation in Class - cs.fsu.edu](https://www.cs.fsu.edu/~myers/cop3330/notes/dma.html)
+- [Destructors in C++](https://www.geeksforgeeks.org/destructors-c/)
