@@ -60,7 +60,29 @@ int main() {
 ```
 In the example above, the destructor is automatically called when the program ends its run (and is deleting the object).
 
-What happens if we don't define a destructor? The compiler automatically generates one, however, if there dynamically allocated memory or pointers declared in the class, these won't get automatically released by the destructor, therefore we have to formally manage that, otherwise this could introduce memory leaks (due to unreleased memory).
+### When to define a destructor
+What happens if we don't define a destructor? The compiler automatically generates one, however, if there dynamically allocated memory or pointers declared in the class, these won't get automatically released by the destructor, therefore we have to formally manage that, otherwise this could introduce memory leaks (due to unreleased memory). The example below illustrates using a destructor to release a pointer.
+
+```
+class String {
+private:
+    char* s;
+    int size;
+ 
+public:
+    String(char*); // constructor
+    ~String(); // destructor
+};
+ 
+String::String(char* c)
+{
+    size = strlen(c);
+    s = new char[size + 1];
+    strcpy(s, c);
+}
+
+String::~String() { delete[] s; }
+```
 
 
 # References
