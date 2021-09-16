@@ -66,6 +66,9 @@ int main() {
   // using '->' to access members of the object
   cout << Margaret->calculateGrade() << "\n";
   cout << Margaret->Score << "\n";
+  
+  // initializing pointer object
+  Student* Clare = new Student(100, "Physics");
 
   return 0;
 
@@ -75,7 +78,7 @@ int main() {
 // B
 // 89
 ```
-From the above example, we can use the pointer object like a standard object, but instead of using `.` dot notation, we instead use the `->` arrow (formally the _member access specifier_) notation to access _members_ (data variables and methods) of the pointer object.
+From the above example, we can use the pointer object like a standard object, but instead of using `.` dot notation, we instead use the `->` arrow (formally the _member access specifier_) notation to access _members_ (data variables and methods) of the pointer object. To create a new pointer object, and call the constructor to initialize the variables, we can use the `new` expression.
 
 ```diff
 // invalid
