@@ -44,3 +44,14 @@ __Date__: 14th & 16th Sept 2021
   - Howework 3
   - Lab 3
 
+## Week 4
+
+__Date__: 21st & 23rd Sept 2021
+
+- **Lecture**: [Class Templates](5%20Class%20Templates)
+  - [[Video](https://youtu.be/lIIIx_nwOe0)] [C++ Class Templates](5%20Class%20Templates/Class%20Templates)
+  - [[Video](https://youtu.be/4mc6ngCPlu8)] [C++ STL library](5%20Class%20Templates/STL%20Library)
+  - [[Video](https://youtu.be/inJXnwTHaSE)] [Constant Member Functions](5%20Class%20Templates/Constant%20Member%20Functions)
+- **Assignment**: 
+  - Homework 4
+  - Lab 4
