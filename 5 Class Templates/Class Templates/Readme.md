@@ -28,11 +28,11 @@ class mypair {
 int main () {
   
   // int
-  mypair myObjectInt(92, 75);
+  mypair<int> myObjectInt(92, 75);
   cout << myObjectInt.getmax() << "\n";
 
   // double
-  mypair myObjectDouble(100.6, 75.0);
+  mypair<float> myObjectDouble(100.6, 75.0);
   cout << myObjectDouble.getmax() << "\n";
 
   return 0;
@@ -133,15 +133,15 @@ class mypair <char> {
 int main () {
   
   // int
-  mypair myObjectInt(92, 75);
+  mypair<int> myObjectInt(92, 75);
   cout << myObjectInt.getmax() << "\n";
 
   // double
-  mypair myObjectDouble(100.6, 75.0);
+  mypair<double> myObjectDouble(100.6, 75.0);
   cout << myObjectDouble.getmax() << "\n";
 
   // char
-  mypair myObjectChar('A', 'c');
+  mypair<char> myObjectChar('A', 'c');
   cout << myObjectChar.getmax() << "\n";
 
   return 0;
@@ -151,6 +151,43 @@ int main () {
 // c
 ```
 In the above example the class `mypair` can accept objects and variables of __int__, __float__, and __char__ using the template and specialized template. The specialized template for __char__ performs additional processing of data arguments, and converts uppercase characters to lowercase characters using the `tolower()` function imported from the `<ctype>` library.
+
+## Multiple Datatypes
+Class templates can also handle multiple different dataypes by expanding on the `T` datatype placeholder. The example below illustrates this usage with `T1` and `T2` to designate the different datatypes.
+```c++
+#include <iostream>
+#include <ctype.h>
+using namespace std;
+
+// templates
+template <class T1, class T2>
+class mypair {
+  T1 a;
+  T2 b;
+
+  public:
+    mypair (T1 first, T2 second) { 
+      a = first; 
+      b = second;
+    }
+
+    T1 getmax(){
+      T1 val;
+      val = a > b ? a : b;
+      return val;
+    }
+
+};
+
+int main() {
+
+  // int
+  mypair<int, double> myObjectInt(92, 75.0);
+  cout << myObjectInt.getmax() << "\n";
+
+}
+
+```
 
 # References:
 - [Templates Tutorial - cplusplus](http://www.cplusplus.com/doc/oldtutorial/templates/)
