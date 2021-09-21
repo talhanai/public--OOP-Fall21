@@ -181,13 +181,19 @@ class mypair {
 
 int main() {
 
-  // int
-  mypair<int, double> myObjectInt(92, 75.0);
-  cout << myObjectInt.getmax() << "\n";
+  // different data types
+  mypair<int, double> myObjectIntDouble(92, 75.0);
+  cout << myObjectIntDouble.getmax() << "\n";
+
+  // swapped types
+  mypair<double, int> myObjectDoubleInt(92.9, 75);
+  cout << myObjectDoubleInt.getmax() << "\n";
 
 }
-
+// 92
+// 92.9
 ```
+The above code shows two examples of creating an object that receive two datatypes in a different order. You can see that the results are slightly different since either an integer (92) or a float (92.9) are returned because the return datatype corresponds to `T1` (int and double, respectively). It is important to be attentive how datatypes ripple through the code, and if it yields inaccuracies.
 
 # References:
 - [Templates Tutorial - cplusplus](http://www.cplusplus.com/doc/oldtutorial/templates/)
