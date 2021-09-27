@@ -1,6 +1,6 @@
 # Virtual Functions
 
-C++ allows us to use pointers, but in doing so, we lose the ability to use virtual functions in classes. Luckily, we can work around this issue by designating base class functions with the keyword `virtual`. This indicates to the compiler that the base class function may be overriden by a function (of the same) in the derived class.
+C++ allows us to use pointers, but in doing so, we lose the ability to use overriding functions in classes. Luckily, we can work around this issue by designating base class functions with the keyword `virtual`. This indicates to the compiler that the base class function may be overriden by a function (of the same) in the derived class.
 
 ## Example: function override fails with pointer object
 Below is an example of defining a pointer to the derived class (using the base class), where the pointer fails to perform a function override.
