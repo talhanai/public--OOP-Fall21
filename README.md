@@ -28,8 +28,6 @@ __Date__: 7th & 9th Sept 2021
   - Howework 2 
   - Lab 2
 
-
-
 ## Week 3
 
 __Date__: 14th & 16th Sept 2021
@@ -55,3 +53,18 @@ __Date__: 21st & 23rd Sept 2021
 - **Assignment**: 
   - Homework 4
   - Lab 4
+
+## Week 5
+
+__Date__: 28th & 30th Sept 2021
+
+- **Lecture**: [Friendship, Inheritance, and Polymorphism](6%20Friendship)
+  - [[Video #1](https://youtu.be/t9S9VslpfII) and [Video #2](https://youtu.be/MtWq0cOkYxo)] [Friendship](6%20Friendship/Friendship)
+  - [[Video](https://youtu.be/RATsW98xvCs)] [Inheritance](6%20Friendship/Inheritance)
+  - [[Video](https://youtu.be/toLEI1DYQSM)] [Function Overriding](6%20Friendship/Function%20Overriding)
+  - [[Video](https://youtu.be/oPXQz91QgqI)] [Virtual Functions](6%20Friendship/Virtual%20Functions) 
+  - [[Video](https://youtu.be/p_NtO4OLA_0)] [Operator Overloading](6%20Friendship/Operator%20Overloading)
+  - [[Video](https://youtu.be/c47mseyJ_4w)] [Polymorphism](6%20Friendship/Polymorphism)
+- **Assignment**: 
+  - Howework 5
+  - Lab 5
