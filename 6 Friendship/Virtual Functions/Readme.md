@@ -103,20 +103,57 @@ There are (atleast) two cases where virtual functions will need to be defined: (
 
 ```c++
 #include <iostream>#include <vector>using namespace std;
-// -- Solution add 'virtual' keywordclass Mammal { private: string printStatement = "Mammals can give direct birth."; public: void printMe(){ cout << "Mammal:: " << printStatement << "\n"; }};
-class WingedAnimal: public Mammal { private: string printStatement = "An animal with wings."; public: void printMe(){ cout << "WingedAnimal:: " << printStatement << "\n"; }};
-class Bat: public Mammal { private: string printStatement = "A new animal."; public: void printMe(){ cout << "Bat:: " << printStatement << "\n"; }};
-void printVal(Mammal *ptr){ptr->printMe();}
-int main() {
- // Example 1: // Calling a function to execute an object method printVal() // When passing a reference only the base class is printed. Bat* b1 = new Bat; b1->printMe(); printVal(b1); // prints base version of function
- Mammal* ptrB = new Mammal; ptrB->printMe(); printVal(ptrB);
- Mammal* ptrC = new WingedAnimal; ptrC->printMe(); printVal(ptrC);
+// -- Solution add 'virtual' keyword
+class Mammal { 
+  private: string printStatement = "Mammals can give direct birth."; 
+  public: void printMe(){ cout << "Mammal:: " << printStatement << "\n"; }
+  };
 
- // Example 2: // Iterating through list of objects // It is not feasible to manually resolve scope cout << "\nPrinting from list:" << endl;
- // vector elements have to be defined from the same class vector<Mammal *> listOfMammals = {ptrB, ptrC}; for (int i=0; i<listOfMammals.size(); i++){ listOfMammals[i]->printMe(); }
+class WingedAnimal: public Mammal { 
+  private: string printStatement = "An animal with wings."; 
+  public: void printMe(){ cout << "WingedAnimal:: " << printStatement << "\n"; }
+  };
+  
+class Bat: public Mammal {
+  private: string printStatement = "A new animal."; 
+  public: void printMe(){ cout << "Bat:: " << printStatement << "\n"; }
+  };
+  
+void printVal(Mammal *ptr){ptr->printMe();}
+
+int main() {
+ // Example 1: 
+ // Calling a function to execute an object method printVal() 
+ // When passing a reference only the base class is printed. 
+ Bat* b1 = new Bat; 
+ b1->printMe(); 
+ printVal(b1); // prints base version of function
+ 
+ Mammal* ptrB = new Mammal; 
+ ptrB->printMe(); 
+ printVal(ptrB);
+ 
+ Mammal* ptrC = new WingedAnimal; 
+ ptrC->printMe(); 
+ printVal(ptrC);
+
+ // Example 2: 
+ // Iterating through list of objects 
+ // It is not feasible to manually resolve scope 
+ cout << "\nPrinting from list:" << endl;
+ // vector elements have to be defined from the same class 
+ vector<Mammal *> listOfMammals = {ptrB, ptrC}; 
+ for (int i=0; i<listOfMammals.size(); i++){ listOfMammals[i]->printMe(); }
 }
-// Bat:: A new animal.// Mammal:: Mammals can give direct birth.// Mammal:: Mammals can give direct birth.// Mammal:: Mammals can give direct birth.// Mammal:: Mammals can give direct birth.// Mammal:: Mammals can give direct birth.
-// Printing from list:// Mammal:: Mammals can give direct birth.// Mammal:: Mammals can give direct birth.
+// Bat:: A new animal.
+// Mammal:: Mammals can give direct birth.
+// Mammal:: Mammals can give direct birth.
+// Mammal:: Mammals can give direct birth.
+// Mammal:: Mammals can give direct birth.
+// Mammal:: Mammals can give direct birth.
+// Printing from list:
+// Mammal:: Mammals can give direct birth.
+// Mammal:: Mammals can give direct birth.
 ```
 
 # References:
