@@ -68,3 +68,15 @@ __Date__: 28th & 30th Sept 2021
 - **Assignment**: 
   - Howework 5
   - Lab 5
+
+## Week 6
+
+__Date__: 5th & 7th Oct 2021
+
+- **Lecture**: [Performance](7%20Performance)
+  - [[Video](https://youtu.be/2eG2qsLu5u4)] [Exceptions](7%20Performance/Exceptions)
+  - [[Video](https://youtu.be/muph4hZ3Wzw)] [Multi-file Code](7%20Performance/Multi-file%20Code)
+  - [[Video](https://youtu.be/9NmMdOuKbe4)] [Compiling Code](7%20Performance/Compiling%20Code)
+  - [[Video](https://youtu.be/Gnv3ApD_6q0)] [Compiler Operation](7%20Performance/Compiler%20Operation)
+  - [[Video](https://youtu.be/opaMPuUmHq0)] [Makefiles](7%20Performance/Makefiles)
+- **Assignment**: Course Project.
