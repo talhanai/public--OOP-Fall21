@@ -1,5 +1,5 @@
 # Multi-file Code
-As coding projects increase in size, it helps to orgianize logic, functions, and classes into seperate files. 
+As coding projects increase in size, it helps to organize logic, functions, and classes into separate files. 
 
 ## File Contents: multiple `.cpp`
 The example below shows how organize code across different files in a project that would be composed of the following files:
