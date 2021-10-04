@@ -65,7 +65,7 @@ catch (...) { // .. code }
 ```
 
 ## Example: `try` `catch` with \<exception\> library
-The C++ Standard Library have a standard set of exceptions that are thrown. The example below demonstrates catching an exception thrown due to a failure in memory allocation.
+The C++ Standard Template Library have a standard set of exceptions that are thrown. The example below demonstrates catching an exception thrown due to a failure in memory allocation.
 ```c++
 // bad_alloc standard exception
 #include <iostream>
