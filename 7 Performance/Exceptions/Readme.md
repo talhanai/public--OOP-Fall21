@@ -42,7 +42,7 @@ int main () {
 // Weather is: flurry
 // Weather is unsafe.
 ```
-The above example shows code within `try {}` being excecuted, however because a condition is met where `throw` is executed, the `catch () {}` code block also executes. The `throw` expression passes the variable `weather` as an argument to `catch ()`. 
+The above example shows code within `try {}` being executed, however because a condition is met where `throw` is executed, the `catch () {}` code block also executes. The `throw` expression passes the variable `weather` as an argument to `catch ()`. 
 
 ## Parameters of `catch`
 `catch` accepts any parameter passed by `throw ()`, it  may also accept any type of exception using the `...` three dot notation.
